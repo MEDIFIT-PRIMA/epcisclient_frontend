@@ -1,0 +1,538 @@
+[
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "ExclusivelyForThomas",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "PredictiveModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Sugar"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Child",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Color",
+            "fsk:name": "Milk",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "Dabur"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "R"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "ExposureModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ],
+            "fsk:exposure": [
+                {
+                    "fsk:type": "Harmful Radiation"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Hg"
+                }
+            ],
+            "fsk:populationGroup": [
+                {
+                    "fsk:name": "Adult"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Everyone",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Radiation",
+            "fsk:name": "Mercury",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "UCIL"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "MatLab"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "ExposureModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ],
+            "fsk:exposure": [
+                {
+                    "fsk:type": "Harmful Radiation"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Hg"
+                }
+            ],
+            "fsk:populationGroup": [
+                {
+                    "fsk:name": "Adult"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Everyone",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Radiation",
+            "fsk:name": "Mercury",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "UCIL"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "MatLab"
+        }
+    },
+    {
+        "fsk:dataBackground": {
+            "fsk:study": {
+                "fsk:title": "Title of study"
+            }
+        },
+        "fsk:modelType": "ExposureModel",
+        "fsk:modelMath": {
+            "fsk:parameter": [
+                {
+                    "fsk:id": "UFGH456",
+                    "fsk:unit": "BeeProd",
+                    "fsk:classification": "CONSTANT",
+                    "fsk:name": "Queen",
+                    "fsk:dataType": "INTEGER"
+                }
+            ],
+            "fsk:exposure": [
+                {
+                    "fsk:type": "Harmful Radiation"
+                }
+            ]
+        },
+        "fsk:scope": {
+            "fsk:hazard": [
+                {
+                    "fsk:name": "Hg"
+                }
+            ],
+            "fsk:populationGroup": [
+                {
+                    "fsk:name": "Adult"
+                }
+            ],
+            "fsk:product": [
+                {
+                    "fsk:unit": "Everyone",
+                    "fsk:name": "food product"
+                }
+            ]
+        },
+        "fsk:generalInformation": {
+            "fsk:identifier": "Radiation",
+            "fsk:name": "Mercury",
+            "fsk:reference": [
+                {
+                    "fsk:isReferenceDescription": "true",
+                    "fsk:doi": "DOI",
+                    "fsk:title": "UCIL"
+                }
+            ],
+            "fsk:creationDate": "2021-03-03T11:30:47.0Z",
+            "fsk:rights": "Given",
+            "fsk:languageWrittenIn": "MatLab"
+        }
+    }
+]
