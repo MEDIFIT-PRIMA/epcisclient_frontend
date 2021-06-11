@@ -1,7 +1,13 @@
 import React from 'react';
 
-import Table from 'react-bootstrap/Table';
+
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Table from 'react-bootstrap/Table';
+import Row from 'react-bootstrap/Row';
+
 import JSONTree from 'react-json-tree';
 
 import './App.css';
@@ -74,6 +80,55 @@ class ModelTable extends React.Component {
   }
 }
 
+class UploadForm extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { selectedFile: "" };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    let files = event.target.files;
+    if (files.length === 1) {
+      this.setState({selectedFile: files[0].name});
+    }
+  }
+
+  handleSubmit(event) {
+    if (this.state.selectedFile) {
+      let data = new FormData();
+      data.append('file', this.state.selectedFile);
+
+      fetch('http://localhost:8000/upload', {method: 'POST', body: data})
+        .then(response => response.json())
+        .then(data => console.log(data));
+    }
+  }
+
+  render() {
+    return (
+      <Row className="mb-3">
+        <Col>
+          <Form>
+            <Form.File
+              id="modelFileInput"
+              label={this.state.selectedFile}
+              placeholder="Select an FSKX file"
+              custom
+              onChange={this.handleChange} />
+          </Form>
+        </Col>
+        <Col>
+          <Button variant="primary" onClick={this.handleSubmit}>Upload</Button>
+        </Col>
+      </Row>
+    );
+  }
+}
+
 class App extends React.Component {
 
   constructor(props) {
@@ -91,6 +146,11 @@ class App extends React.Component {
     return (
       <Container className="p-3">
         <h1>EPCIS client</h1>
+
+        <h2>Model upload</h2>
+        <UploadForm />
+
+        <h2>Models</h2>
         <ModelTable metadata={this.state.metadata} />
       </Container>
     );
