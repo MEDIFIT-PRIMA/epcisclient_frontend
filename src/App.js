@@ -8,8 +8,6 @@ import Form from 'react-bootstrap/Form';
 import Table from 'react-bootstrap/Table';
 import Row from 'react-bootstrap/Row';
 
-import JSONTree from 'react-json-tree';
-
 import './App.css';
 
 class ModelTable extends React.Component {
@@ -84,7 +82,7 @@ class UploadForm extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { selectedFile: "" };
+    this.state = { selectedFile: undefined };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -93,7 +91,7 @@ class UploadForm extends React.Component {
   handleChange(event) {
     let files = event.target.files;
     if (files.length === 1) {
-      this.setState({selectedFile: files[0].name});
+      this.setState({selectedFile: files[0]});
     }
   }
 
@@ -102,9 +100,13 @@ class UploadForm extends React.Component {
       let data = new FormData();
       data.append('file', this.state.selectedFile);
 
+      // TODO: upload file and update metadata table
       fetch('http://localhost:8000/upload', {method: 'POST', body: data})
         .then(response => response.json())
-        .then(data => console.log(data));
+        .then(data => {
+          console.log(data);
+          this.props.addModel(data)
+        });
     }
   }
 
@@ -115,7 +117,7 @@ class UploadForm extends React.Component {
           <Form>
             <Form.File
               id="modelFileInput"
-              label={this.state.selectedFile}
+              label={this.state.selectedFile ? this.state.selectedFile.name : "" }
               placeholder="Select an FSKX file"
               custom
               onChange={this.handleChange} />
@@ -142,13 +144,23 @@ class App extends React.Component {
       .then(data => this.setState({ metadata: data}));
   }
 
+  addModel(model) {
+    // TODO: ...
+    console.log("adding model: " + model);
+    // should actually set new state: metadata += model
+
+    let extendedMetadata = [...this.state.metadata]
+    extendedMetadata.push(model);
+    this.setState({ metadata: extendedMetadata});
+  }
+
   render() {
     return (
       <Container className="p-3">
         <h1>EPCIS client</h1>
 
         <h2>Model upload</h2>
-        <UploadForm />
+        <UploadForm addModel = {(model) => this.addModel(model)} />
 
         <h2>Models</h2>
         <ModelTable metadata={this.state.metadata} />
