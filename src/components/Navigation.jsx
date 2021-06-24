@@ -21,7 +21,11 @@ function Navigation(props) {
                                 </Link>
                             </li>
 
-                            { /* TODO: upload page */ }
+                            <li className={`nav-item ${props.location.pathname === "/upload" ? "active" : ""}`}>
+                                <Link className="nav-link" to="/upload">
+                                    Upload
+                                </Link>
+                            </li>
 
                             <li className={`nav-item ${props.location.pathname === "/about" ? "active" : ""}`}>
                                 <Link className="nav-link" to="/about">

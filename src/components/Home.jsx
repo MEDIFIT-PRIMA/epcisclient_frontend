@@ -91,7 +91,6 @@ class UploadForm extends React.Component {
             let data = new FormData();
             data.append('file', this.state.selectedFile);
 
-            // TODO: upload file and update metadata table
             fetch('http://localhost:8000/upload', { method: 'POST', body: data })
                 .then(response => response.json())
                 .then(data => {
@@ -136,9 +135,7 @@ class Home extends React.Component {
     }
 
     addModel(model) {
-        // TODO: ...
         console.log("adding model: " + model);
-        // should actually set new state: metadata += model
 
         let extendedMetadata = [...this.state.metadata]
         extendedMetadata.push(model);
@@ -148,10 +145,10 @@ class Home extends React.Component {
     render() {
         return (
             <Container className="p-3">
-                <h2 className="font-weight-light">Model upload</h2>
-                <UploadForm addModel={(model) => this.addModel(model)} />
+                {/* <h2 className="font-weight-light">Model upload</h2>
+                <UploadForm addModel={(model) => this.addModel(model)} /> */}
 
-                <h2 className="font-weight-light">Models</h2>
+                <h1 className="font-weight-light">Models</h1>
                 <ModelTable metadata={this.state.metadata} />
             </Container>
         );
