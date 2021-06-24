@@ -57,66 +57,58 @@ class UploadForm extends React.Component {
 function Upload() {
     return (
         <div className="upload">
-            <div class="container">
-                <h1 class="font-weight-light">Upload</h1>
+            <div className="container">
+                <h1 className="font-weight-light">Upload</h1>
 
-                <div class="p-3">
+                <div className="p-3">
                     <Card>
                         <Card.Body>
                             <Card.Title>FSKX files upload</Card.Title>
                             <Card.Subtitle>Import directly local FSKX files from your computer</Card.Subtitle>
-                            <Card.Text>
-                                <UploadForm />
-                                <Alert key="fileupload-alert" variant="warning">
-                                    <Alert.Heading>Supported model types</Alert.Heading>
-                                    <p>
-                                        The import of metadata in FSKX files is under development and only the following model schemas are supported:
-                                        <ul>
-                                            <li>Generic model</li>
-                                            <li>Data model</li>
-                                            <li>Predictive model</li>
-                                            <li>Other model</li>
-                                            <li>Exposure model</li>
-                                        </ul>
-                                    </p>
-                                </Alert>
-                            </Card.Text>
+                            <UploadForm />
+                            <Alert key="fileupload-alert" variant="warning">
+                                <Alert.Heading>Supported model types</Alert.Heading>
+                                The import of metadata in FSKX files is under development and only the following model schemas are supported:
+                                <ul>
+                                    <li>Generic model</li>
+                                    <li>Data model</li>
+                                    <li>Predictive model</li>
+                                    <li>Other model</li>
+                                    <li>Exposure model</li>
+                                </ul>
+                            </Alert>
                         </Card.Body>
                     </Card>
                 </div>
 
-                <div class="p-3">
+                <div className="p-3">
                     <Card>
                         <Card.Body>
                             <Card.Title>BfR Online Model Creation</Card.Title>
                             <Card.Subtitle>Create and import a model in KNIME Webportal</Card.Subtitle>
-                            <Card.Text>
-                                <Row>
-                                    <Col>A model can be created in the Online Model Creation workflow on KNIME Webportal. At the end of the workflow the created model will be imported here.</Col>
-                                    <Col>
-                                        <Button href="https://knime.bfr.berlin/knime/webportal/space/RAKIP-Web/Online_Model_Creation" target="_blank">
-                                            Online Model Creation
-                                        </Button>
-                                    </Col>
-                                </Row>
-                            </Card.Text>
+                            <Row>
+                                <Col>A model can be created in the Online Model Creation workflow on KNIME Webportal. At the end of the workflow the created model will be imported here.</Col>
+                                <Col>
+                                    <Button href="https://knime.bfr.berlin/knime/webportal/space/RAKIP-Web/Online_Model_Creation" target="_blank">
+                                        Online Model Creation
+                                    </Button>
+                                </Col>
+                            </Row>
                         </Card.Body>
                     </Card>
                 </div>
 
-                <div class="p-3">
+                <div className="p-3">
                     <Card>
                         <Card.Body>
                             <Card.Title>MicroHibro import</Card.Title>
                             <Card.Subtitle>Create and import a model in MicroHibro</Card.Subtitle>
-                            <Card.Text>
-                                <Row>
-                                    <Col>A selected annotated model in MicroHibro can be imported here.</Col>
-                                    <Col>
-                                        <Button href="https://www.microhibro.com/" target="_blank">MicroHibro</Button>
-                                    </Col>
-                                </Row>
-                            </Card.Text>
+                            <Row>
+                                <Col>A selected annotated model in MicroHibro can be imported here.</Col>
+                                <Col>
+                                    <Button href="https://www.microhibro.com/" target="_blank">MicroHibro</Button>
+                                </Col>
+                            </Row>
                         </Card.Body>
                     </Card>
                 </div>
