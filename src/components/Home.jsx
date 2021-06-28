@@ -1,4 +1,4 @@
-import { Button, Col, Container, Form, Table, Row } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 import React from 'react';
 
 class ModelTable extends React.Component {
@@ -69,58 +69,6 @@ class ModelTable extends React.Component {
     }
 }
 
-class UploadForm extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = { selectedFile: undefined };
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
-
-    handleChange(event) {
-        let files = event.target.files;
-        if (files.length === 1) {
-            this.setState({ selectedFile: files[0] });
-        }
-    }
-
-    handleSubmit(event) {
-        if (this.state.selectedFile) {
-            let data = new FormData();
-            data.append('file', this.state.selectedFile);
-
-            fetch('http://localhost:8000/upload', { method: 'POST', body: data })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    this.props.addModel(data)
-                });
-        }
-    }
-
-    render() {
-        return (
-            <Row className="mb-3">
-                <Col>
-                    <Form>
-                        <Form.File
-                            id="modelFileInput"
-                            label={this.state.selectedFile ? this.state.selectedFile.name : ""}
-                            placeholder="Select an FSKX file"
-                            custom
-                            onChange={this.handleChange} />
-                    </Form>
-                </Col>
-                <Col>
-                    <Button variant="primary" onClick={this.handleSubmit}>Upload</Button>
-                </Col>
-            </Row>
-        );
-    }
-}
-
 class Home extends React.Component {
 
     constructor(props) {
@@ -135,8 +83,6 @@ class Home extends React.Component {
     }
 
     addModel(model) {
-        console.log("adding model: " + model);
-
         let extendedMetadata = [...this.state.metadata]
         extendedMetadata.push(model);
         this.setState({ metadata: extendedMetadata });
@@ -145,9 +91,6 @@ class Home extends React.Component {
     render() {
         return (
             <Container className="p-3">
-                {/* <h2 className="font-weight-light">Model upload</h2>
-                <UploadForm addModel={(model) => this.addModel(model)} /> */}
-
                 <h1 className="font-weight-light">Models</h1>
                 <ModelTable metadata={this.state.metadata} />
             </Container>
