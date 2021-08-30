@@ -8,7 +8,7 @@ import { About, Footer, Home, Navigation, Upload } from './components';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/epcis">
         <Navigation />
         <Switch>
           <Route path="/" exact component={() => <Home />} />
